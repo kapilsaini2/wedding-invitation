@@ -1,31 +1,42 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kanchan Weds Robin Singh</title>
+<title>Kanchan Weds Robin Singh | Royal Wedding</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+ --pink:#a51e51;
+ --deep:#6e1237;
+ --rose:#d65c88;
+ --light:#fce8ef;
+ --blush:#f7d3e1;
+ --gold:#d4aa63;
+ --gold2:#f5dda6;
+ --cream:#fffaf4;
+}
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+html{
+ scroll-behavior:smooth;
+}
+
 body{
  margin:0;
- background:#f8eee0;
- color:#713d2a;
+ background:#fce8ef;
+ color:#702747;
  font-family:Poppins,sans-serif;
  overflow-x:hidden;
 }
-:root{
- --gold:#c69b48;
- --red:#8c2433;
- --cream:#fff8e9;
-}
+
 section{
  min-height:100vh;
- padding:35px 20px;
+ padding:40px 16px;
  display:flex;
  align-items:center;
  justify-content:center;
@@ -33,106 +44,203 @@ section{
  position:relative;
  overflow:hidden;
 }
-.card{
- width:min(100%,470px);
- background:rgba(255,249,235,.94);
- border:2px solid var(--gold);
- border-radius:24px;
- padding:35px 22px;
- box-shadow:0 12px 40px #663b261c;
- position:relative;
+
+section:before,
+section:after{
+ content:"";
+ position:absolute;
+ width:230px;
+ height:230px;
+ border:1px solid rgba(212,170,99,.35);
+ border-radius:50%;
+ pointer-events:none;
 }
+
+section:before{
+ top:-110px;
+ left:-100px;
+}
+
+section:after{
+ bottom:-110px;
+ right:-100px;
+}
+
+.card{
+ width:min(100%,480px);
+ background:rgba(255,250,244,.97);
+ border:2px solid var(--gold);
+ border-radius:28px;
+ padding:34px 22px;
+ position:relative;
+ z-index:1;
+ box-shadow:
+ 0 15px 50px #77133d19,
+ 0 0 0 6px #d4aa6320,
+ inset 0 0 35px #f8dfeb;
+}
+
 .card:before{
- content:"❀ ❀ ❀";
+ content:"❀  ✧  ❀";
  display:block;
  color:var(--gold);
  font-size:23px;
- margin-bottom:15px;
+ margin-bottom:14px;
 }
-h1,h2{
+
+.card:after{
+ content:"❦";
+ display:block;
+ color:var(--gold);
+ font-size:27px;
+ margin-top:18px;
+}
+
+h1,h2,h3{
  font-family:"Playfair Display",serif;
- color:var(--red);
+ color:var(--deep);
 }
+
+h1{
+ font-size:45px;
+ margin:10px 0;
+}
+
+h2{
+ font-size:32px;
+ margin:12px 0;
+}
+
 .script{
  font-family:"Great Vibes",cursive;
- color:#a52b3c;
+ color:var(--pink);
 }
-h1{font-size:45px;margin:8px 0}
-h2{font-size:32px;margin:10px 0}
-p{line-height:1.9}
+
+p{
+ line-height:1.9;
+}
+
 button,.btn{
- background:var(--red);
+ background:linear-gradient(135deg,#8c1744,#d54e82,#8c1744);
  color:white;
- border:0;
+ border:1px solid var(--gold);
  padding:13px 23px;
  border-radius:40px;
- font-size:15px;
+ font-size:14px;
  cursor:pointer;
  margin:8px;
- text-decoration:none;
  display:inline-block;
+ text-decoration:none;
+ box-shadow:0 5px 18px #8c174430;
+ transition:.3s;
 }
-button:hover,.btn:hover{background:#641725}
+
+button:hover,.btn:hover{
+ transform:translateY(-2px);
+ box-shadow:0 8px 22px #8c174450;
+}
+
 .gold{color:var(--gold)}
-.small{font-size:13px}
+.small{font-size:12px}
+
 .divider{
- width:80px;
+ width:100px;
  height:2px;
- background:var(--gold);
- margin:20px auto;
+ background:linear-gradient(90deg,transparent,var(--gold),transparent);
+ margin:22px auto;
 }
-.bg1{background:linear-gradient(135deg,#f6dfbd,#fff8e9,#e8c98e)}
-.bg2{background:linear-gradient(135deg,#f5e4c9,#fffaf0)}
-.bg3{background:linear-gradient(135deg,#8c2433,#b85653,#e7bd79);color:white}
-.bg4{background:linear-gradient(135deg,#fff2dd,#efd4a7)}
-.bg5{background:linear-gradient(135deg,#f8e9cc,#f3d5a8)}
-.bg6{background:linear-gradient(135deg,#f0d8ba,#fff7e9)}
+
+.bg1{
+ background:linear-gradient(135deg,#f7d4e2,#fff9f5,#e9b8ce);
+}
+
+.bg2{
+ background:linear-gradient(135deg,#fff7f0,#f7d9e6,#fbe9ed);
+}
+
+.bg3{
+ background:linear-gradient(135deg,#6e1237,#a51e51,#d46a8d);
+}
+
+.bg4{
+ background:linear-gradient(135deg,#fae1eb,#fff9f2,#eec4d6);
+}
+
+.bg5{
+ background:linear-gradient(135deg,#f5d1df,#fff5ed,#e9c0d2);
+}
+
+.bg6{
+ background:linear-gradient(135deg,#f7e0e8,#fffaf4,#eac2d4);
+}
+
 .ganesh{
  width:155px;
  max-height:180px;
  object-fit:contain;
  margin:0 auto 15px;
+ filter:drop-shadow(0 5px 8px #d59aaf30);
 }
+
 .flower{
  position:absolute;
- font-size:20px;
- opacity:.45;
+ font-size:26px;
+ opacity:.55;
  animation:float 5s infinite ease-in-out;
  pointer-events:none;
 }
+
 @keyframes float{
- 0%,100%{transform:translateY(0) rotate(0)}
- 50%{transform:translateY(-20px) rotate(10deg)}
+ 0%,100%{transform:translateY(0)}
+ 50%{transform:translateY(-18px) rotate(10deg)}
 }
+
 .event{
- border:1px solid #d4b26c;
- border-radius:15px;
- padding:15px;
- margin:13px 0;
- background:#fffaf0;
+ border:1px solid var(--gold);
+ border-radius:20px;
+ padding:17px 12px;
+ margin:15px 0;
+ background:linear-gradient(135deg,#fffaf5,#fbe5ed);
+ box-shadow:0 5px 15px #ad42631a;
 }
-.event h3{color:var(--red);margin:5px}
-.event .emoji{font-size:30px}
-.bigdate{font-size:25px;color:var(--red)}
+
+.event h3{
+ color:var(--pink);
+ margin:7px;
+ font-size:20px;
+}
+
+.event .emoji{
+ font-size:34px;
+}
+
+.bigdate{
+ font-size:25px;
+ color:var(--pink);
+ font-weight:600;
+}
+
 #musicBtn{
  position:fixed;
  bottom:20px;
  right:18px;
- width:52px;
- height:52px;
+ width:55px;
+ height:55px;
  border-radius:50%;
  z-index:100;
- background:#8c2433;
- border:2px solid #d7b66d;
- font-size:22px;
- box-shadow:0 3px 15px #0003;
+ background:linear-gradient(135deg,#8c1744,#d85c89);
+ border:2px solid var(--gold);
+ font-size:23px;
+ box-shadow:0 4px 20px #0003;
 }
 
-/* OPENING SCREEN */
+/* ENVELOPE SCREEN */
+
 #startScreen{
  position:fixed;
  inset:0;
- background:linear-gradient(135deg,#7d182b,#b24c43,#d5a353);
+ background:
+ radial-gradient(circle at top,#f8d6e4,#b72c61 60%,#651032);
  display:flex;
  justify-content:center;
  align-items:center;
@@ -141,99 +249,136 @@ button:hover,.btn:hover{background:#641725}
  z-index:999;
  overflow:hidden;
 }
-.startcard{
- background:#fff8e9;
- padding:32px 22px;
- border:3px double #d0a44c;
- border-radius:25px;
- max-width:420px;
- width:100%;
- box-shadow:0 10px 50px #0004;
+
+#startScreen:before,
+#startScreen:after{
+ content:"✧ ❀ ✧ ❀ ✧";
+ position:absolute;
+ color:#f9e4b0;
+ opacity:.4;
+ font-size:25px;
+ letter-spacing:12px;
 }
-.startcard h1{font-size:40px}
+
+#startScreen:before{top:35px}
+#startScreen:after{bottom:35px}
+
+.startcard{
+ background:linear-gradient(145deg,#fffaf4,#fbe8ef);
+ padding:32px 20px;
+ border:3px double var(--gold);
+ outline:1px solid #fff2d6;
+ outline-offset:5px;
+ border-radius:26px;
+ max-width:430px;
+ width:100%;
+ box-shadow:0 15px 60px #0005;
+ position:relative;
+}
+
+.startcard h1{
+ font-size:40px;
+}
+
 .envelope-area{
- height:180px;
+ height:190px;
  display:flex;
  justify-content:center;
  align-items:center;
+ perspective:900px;
  cursor:pointer;
- perspective:800px;
 }
+
 .envelope{
  position:relative;
- width:190px;
- height:125px;
- background:#b73748;
- border:2px solid #d8ae60;
- border-radius:5px;
- box-shadow:0 10px 25px #0003;
- animation:heartbeat 1.8s infinite;
+ width:220px;
+ height:140px;
+ background:#a31d4d;
+ border:2px solid var(--gold);
+ border-radius:6px;
+ box-shadow:0 15px 30px #0004;
 }
-.envelope:before{
- content:"";
+
+.envelope-back{
  position:absolute;
  inset:0;
- background:#d45c65;
- clip-path:polygon(0 0,100% 0,50% 58%);
+ background:#9e1948;
+ z-index:1;
+}
+
+.envelope-front{
+ position:absolute;
+ inset:0;
+ background:#c23c70;
+ clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);
  z-index:3;
+}
+
+.envelope-flap{
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:linear-gradient(135deg,#e77a9f,#b1285c);
+ clip-path:polygon(0 0,100% 0,50% 58%);
  transform-origin:top;
- transition:transform 1s ease;
+ transition:transform .9s ease;
+ z-index:5;
 }
-.envelope:after{
- content:"";
+
+.seal{
  position:absolute;
- inset:0;
- background:#8e2335;
- clip-path:polygon(0 100%,0 0,50% 58%,100% 0,100% 100%);
- z-index:2;
-}
-.envelope-heart{
- position:absolute;
- top:48%;
+ top:49%;
  left:50%;
  transform:translate(-50%,-50%);
- z-index:5;
- font-size:38px;
- color:#f9df9b;
+ width:48px;
+ height:48px;
+ background:radial-gradient(circle,#f7e4b3,#c7994e);
+ border:2px solid #fff1c8;
+ border-radius:50%;
+ z-index:6;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ color:#9b214b;
+ font-size:25px;
+ box-shadow:0 3px 10px #0003;
+ transition:.4s;
 }
-@keyframes heartbeat{
- 0%,100%{transform:scale(1)}
- 50%{transform:scale(1.05)}
-}
-#startScreen.open .envelope:before{
+
+#startScreen.open .envelope-flap{
  transform:rotateX(180deg);
 }
-#startScreen.open .envelope-heart{
+
+#startScreen.open .seal{
  opacity:0;
- transition:opacity .3s;
 }
+
 #startScreen.hide{
  animation:fadeout 1s forwards;
  pointer-events:none;
 }
+
 @keyframes fadeout{
  to{opacity:0;visibility:hidden}
 }
-.open-text{
- display:inline-block;
- animation:pulse 1.5s infinite;
-}
-@keyframes pulse{
- 50%{opacity:.6}
-}
 
 /* SCRATCH CARD */
+
 .scratch-box{
  width:100%;
- max-width:330px;
- height:190px;
+ max-width:340px;
+ height:200px;
  position:relative;
- margin:20px auto;
+ margin:22px auto;
  border-radius:20px;
  overflow:hidden;
  border:2px solid var(--gold);
- background:#fff4dd;
+ background:#fff3dc;
+ box-shadow:0 8px 22px #b64d6e20;
 }
+
 .scratch-result{
  position:absolute;
  inset:0;
@@ -241,12 +386,14 @@ button:hover,.btn:hover{background:#641725}
  align-items:center;
  justify-content:center;
  flex-direction:column;
- background:linear-gradient(135deg,#fff4dd,#f3d5a8);
+ background:linear-gradient(135deg,#fff4dd,#f8d7e4);
 }
+
 .scratch-result h2{
- font-size:35px;
+ font-size:34px;
  margin:8px;
 }
+
 #scratchCanvas{
  position:absolute;
  inset:0;
@@ -256,36 +403,68 @@ button:hover,.btn:hover{background:#641725}
  cursor:crosshair;
  z-index:2;
 }
+
 #countdown{
- font-size:21px;
- color:var(--red);
+ font-size:20px;
+ color:var(--pink);
  font-weight:600;
  margin:15px 0;
 }
-footer{font-size:13px;margin-top:20px}
+
+.contact-box{
+ margin:20px 0;
+ padding:18px;
+ border:1px solid var(--gold);
+ border-radius:18px;
+ color:#702747;
+ background:linear-gradient(135deg,#fffaf4,#f9e5ed);
+}
+
+.contact-box a{
+ color:#a51e51;
+ text-decoration:none;
+ font-weight:600;
+}
+
+footer{
+ font-size:13px;
+ margin-top:20px;
+}
+
+@media(max-width:400px){
+ h1{font-size:38px}
+ h2{font-size:28px}
+ .card{padding:28px 16px}
+}
 </style>
 </head>
 
 <body>
 
-<!-- CLOSED ENVELOPE -->
+<!-- ROYAL ENVELOPE -->
 <div id="startScreen">
  <div class="startcard">
-  <p class="gold">॥ श्री गणेशाय नमः ॥</p>
+
+  <p style="color:#b58b43">॥ श्री गणेशाय नमः ॥</p>
 
   <div class="envelope-area" onclick="openInvitation()">
    <div class="envelope">
-    <div class="envelope-heart">♥</div>
+    <div class="envelope-back"></div>
+    <div class="envelope-front"></div>
+    <div class="envelope-flap"></div>
+    <div class="seal">♥</div>
    </div>
   </div>
 
-  <p class="gold">A beautiful celebration of love</p>
+  <p style="color:#b58b43">A Royal Celebration of Love</p>
+
   <h1 class="script">Kanchan Weds Robin</h1>
+
   <p>आप सादर आमंत्रित हैं</p>
 
-  <button onclick="openInvitation()">💌 Open Envelope</button>
+  <button onclick="openInvitation()">💌 Open Royal Invitation</button>
 
-  <p class="small open-text">Tap the envelope to open your invitation ♡</p>
+  <p class="small">Touch the envelope to open ♡</p>
  </div>
 </div>
 
@@ -298,35 +477,41 @@ footer{font-size:13px;margin-top:20px}
 
 <!-- PAGE 1 -->
 <section class="bg1" id="top">
- <span class="flower" style="top:10%;left:10%">🌸</span>
- <span class="flower" style="bottom:10%;right:10%">🌼</span>
+
+ <span class="flower" style="top:10%;left:8%">🌸</span>
+ <span class="flower" style="bottom:10%;right:8%">🌹</span>
 
  <div class="card">
   <p class="gold">॥ श्री गणेशाय नमः ॥</p>
+
   <img class="ganesh" src="./ganesh.jpeg" alt="Ganesh Ji"
-       onerror="this.style.display='none'">
+  onerror="this.style.display='none'">
 
   <h2 class="script">Shubh Vivah</h2>
   <p>With the blessings of Lord Ganesha</p>
+
   <div class="divider"></div>
 
   <h1 class="script">Kanchan</h1>
-  <p>❤️ Weds ❤️</p>
+  <p>♡ Weds ♡</p>
   <h1 class="script">Robin Singh</h1>
-  <p>Two hearts • One beautiful journey</p>
 
-  <button onclick="goTo('date')">Open Invitation ↓</button>
+  <p>Two hearts • One royal journey</p>
+
+  <button onclick="goTo('date')">Our Invitation ↓</button>
  </div>
 </section>
 
-<!-- PAGE 2 DATE + SCRATCH -->
+<!-- PAGE 2 SCRATCH -->
 <section class="bg2" id="date">
  <div class="card">
+
   <p class="gold">SAVE THE DATE</p>
   <h2 class="script">Wedding Celebration</h2>
+
   <div class="divider"></div>
 
-  <p>Scratch below to reveal our wedding date 💌</p>
+  <p>Scratch the golden card to reveal our special day ✨</p>
 
   <div class="scratch-box">
    <div class="scratch-result">
@@ -337,7 +522,7 @@ footer{font-size:13px;margin-top:20px}
    <canvas id="scratchCanvas"></canvas>
   </div>
 
-  <p class="small">Use your finger to scratch the golden surface ✨</p>
+  <p class="small">Scratch with your finger to reveal 💌</p>
 
   <p class="bigdate">30 November 2026</p>
   <h2>7:00 PM</h2>
@@ -354,8 +539,10 @@ footer{font-size:13px;margin-top:20px}
 <!-- PAGE 3 FAMILY -->
 <section class="bg4" id="family">
  <div class="card">
+
   <p class="gold">With the blessings of our families</p>
   <h2 class="script">Wedding Invitation</h2>
+
   <p>We joyfully invite you to celebrate the wedding of</p>
 
   <h1 class="script">Kanchan</h1>
@@ -375,14 +562,15 @@ footer{font-size:13px;margin-top:20px}
 <!-- PAGE 4 EVENTS -->
 <section class="bg5" id="events">
  <div class="card">
-  <p class="gold">The Wedding Celebration</p>
+
+  <p class="gold">The Royal Celebration</p>
   <h1 class="script">Wedding Events</h1>
 
   <div class="event">
    <div class="emoji">🪔</div>
    <h3>Lagan Lekhan</h3>
    <p>22 November 2026</p>
-   <p>🕗 8:00 PM</p>
+   <p>🕗 8:00 AM</p>
   </div>
 
   <div class="event">
@@ -420,9 +608,11 @@ footer{font-size:13px;margin-top:20px}
 <!-- PAGE 5 VENUE -->
 <section class="bg2" id="venue">
  <div class="card">
+
   <p class="gold">Wedding Location</p>
   <h1 class="script">Venue</h1>
-  <div class="emoji" style="font-size:45px">📍</div>
+
+  <div style="font-size:45px">📍</div>
 
   <h2>Girdhar Ki Dhani</h2>
   <p>Ward No. 09</p>
@@ -432,9 +622,9 @@ footer{font-size:13px;margin-top:20px}
   <div class="divider"></div>
 
   <a class="btn"
-     href="https://maps.app.goo.gl/oVzaZK7vzjT5ZgFV9"
-     target="_blank">
-     📍 Open Google Maps
+  href="https://maps.app.goo.gl/oVzaZK7vzjT5ZgFV9"
+  target="_blank">
+  📍 Open Google Maps
   </a>
 
   <button onclick="goTo('blessings')">Next ↓</button>
@@ -444,6 +634,7 @@ footer{font-size:13px;margin-top:20px}
 <!-- PAGE 6 BLESSINGS -->
 <section class="bg1" id="blessings">
  <div class="card">
+
   <p class="gold">Your presence is our present</p>
   <h1 class="script">Blessings & Love</h1>
 
@@ -452,34 +643,43 @@ footer{font-size:13px;margin-top:20px}
   <div class="divider"></div>
 
   <p>Join us to celebrate a lifetime of love, happiness and togetherness.</p>
+
   <h2 class="script">Kanchan ❤️ Robin</h2>
 
   <button onclick="goTo('last')">Final Invitation ↓</button>
  </div>
 </section>
 
-<!-- LAST PAGE -->
+<!-- FINAL FAMILY PAGE -->
 <section class="bg3" id="last">
  <div class="card">
+
   <p>❤️ With Love & Blessings ❤️</p>
+
   <h1 class="script">Karodiya Family</h1>
+
   <h2>WELCOME YOU</h2>
   <p>With Love & Blessings</p>
 
-  <div style="margin:20px 0;padding:15px;border:1px solid #d9ad55;border-radius:15px;color:#713d2a;background:#fffaf0">
+  <div class="contact-box">
+
    <h3>Contact Details</h3>
 
-   <p><b>Shree Jagan Singh Saini</b></p>
-   <a href="tel:9351955727">📞 9351955727</a>
+   <p><b>Chandra Shekhar</b></p>
+   <a href="tel:9950601964">📞 9950601964</a>
 
-   <hr>
+   <hr style="border:0;border-top:1px solid #d4aa63;margin:20px 0">
 
-   <p><b>Shree Rajesh Saini</b></p>
-   <a href="tel:9783969334">📞 9783969334</a>
+   <p><b>Kapil</b></p>
+   <a href="tel:8432562718">📞 8432562718</a>
+
   </div>
 
   <button onclick="shareInvitation()">💌 SHARE ON WHATSAPP</button>
-  <button class="btn" onclick="goTo('top')" style="background:#b58b43">Replay Invitation</button>
+
+  <button onclick="goTo('top')" style="background:linear-gradient(135deg,#d4aa63,#a67b38)">
+   Replay Invitation
+  </button>
 
   <footer>Made with love ❤️</footer>
  </div>
@@ -498,7 +698,6 @@ function openInvitation(){
 
  startScreen.classList.add("open");
 
- // Music starts on the same user tap
  music.play().then(()=>{
   musicBtn.innerText="♫";
  }).catch(()=>{
@@ -507,7 +706,7 @@ function openInvitation(){
 
  setTimeout(()=>{
   startScreen.classList.add("hide");
- },900);
+ },1100);
 }
 
 function toggleMusic(){
@@ -533,16 +732,15 @@ function goTo(id){
  document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
 
-// COUNTDOWN
+/* COUNTDOWN */
 function updateCountdown(){
  const weddingDate=new Date("2026-11-30T19:00:00+05:30").getTime();
- const now=new Date().getTime();
+ const now=Date.now();
  const distance=weddingDate-now;
-
  const box=document.getElementById("countdown");
 
  if(distance<=0){
-  box.innerHTML="❤️ The Wedding Celebration is here! ❤️";
+  box.innerHTML="❤️ Wedding Celebration is here! ❤️";
   return;
  }
 
@@ -553,12 +751,14 @@ function updateCountdown(){
 
  box.innerHTML=days+" Days "+hours+" Hours<br>"+minutes+" Minutes "+seconds+" Seconds";
 }
+
 updateCountdown();
 setInterval(updateCountdown,1000);
 
-// SCRATCH CARD
+/* SCRATCH CARD */
 const canvas=document.getElementById("scratchCanvas");
 const ctx=canvas.getContext("2d");
+
 let scratching=false;
 let scratchedPixels=0;
 let scratchCleared=false;
@@ -570,25 +770,24 @@ function setupScratch(){
 
  canvas.width=rect.width*dpr;
  canvas.height=rect.height*dpr;
-
  canvas.style.width=rect.width+"px";
  canvas.style.height=rect.height+"px";
 
- ctx.scale(dpr,dpr);
+ ctx.setTransform(dpr,0,0,dpr,0,0);
 
- // Golden scratch coating
  const gradient=ctx.createLinearGradient(0,0,rect.width,rect.height);
- gradient.addColorStop(0,"#d8b15c");
- gradient.addColorStop(.5,"#f6e4a7");
- gradient.addColorStop(1,"#c69b48");
+ gradient.addColorStop(0,"#b83265");
+ gradient.addColorStop(.5,"#f5dda6");
+ gradient.addColorStop(1,"#d4aa63");
 
+ ctx.globalCompositeOperation="source-over";
  ctx.fillStyle=gradient;
  ctx.fillRect(0,0,rect.width,rect.height);
 
- ctx.fillStyle="#8c2433";
- ctx.font="bold 18px Poppins";
+ ctx.fillStyle="#fffaf4";
+ ctx.font="bold 17px Poppins";
  ctx.textAlign="center";
- ctx.fillText("✨ SCRATCH HERE ✨",rect.width/2,rect.height/2);
+ ctx.fillText("✧ SCRATCH HERE ✧",rect.width/2,rect.height/2);
 
  ctx.globalCompositeOperation="destination-out";
 }
@@ -597,20 +796,20 @@ function scratch(e){
  if(!scratching||scratchCleared)return;
 
  const rect=canvas.getBoundingClientRect();
- const x=(e.clientX||e.touches?.[0]?.clientX)-rect.left;
- const y=(e.clientY||e.touches?.[0]?.clientY)-rect.top;
+ const x=e.clientX-rect.left;
+ const y=e.clientY-rect.top;
 
  ctx.beginPath();
- ctx.arc(x,y,22,0,Math.PI*2);
+ ctx.arc(x,y,23,0,Math.PI*2);
  ctx.fill();
 
  scratchedPixels++;
 
- if(scratchedPixels>100){
+ if(scratchedPixels>90){
   scratchCleared=true;
-  canvas.style.transition="opacity .8s";
+  canvas.style.transition="opacity .7s";
   canvas.style.opacity="0";
-  setTimeout(()=>canvas.style.display="none",800);
+  setTimeout(()=>canvas.style.display="none",700);
  }
 }
 
@@ -619,6 +818,7 @@ canvas.addEventListener("pointerdown",e=>{
  canvas.setPointerCapture(e.pointerId);
  scratch(e);
 });
+
 canvas.addEventListener("pointermove",scratch);
 canvas.addEventListener("pointerup",()=>scratching=false);
 canvas.addEventListener("pointercancel",()=>scratching=false);
@@ -629,9 +829,10 @@ window.addEventListener("resize",()=>{
 
 setupScratch();
 
-// WHATSAPP SHARE
+/* WHATSAPP */
 function shareInvitation(){
- const msg=`💌 Wedding Invitation ❤️
+
+ const msg=`💌 Royal Wedding Invitation ❤️
 
 Kanchan Weds Robin Singh
 
@@ -642,16 +843,20 @@ Kanchan Weds Robin Singh
 Bilaspur Road, Near Sitla Mata Mandir
 
 Wedding Events:
-🪔 Lagan Lekhan - 22 November, 8 PM
-🌼 Haldi-Mehndi - 29 November, 12 PM
-💃 Ladies Sangeet - 29 November, 2 PM
-🌸 Chaak - 29 November, 4 PM
-💍 Wedding - 30 November, 7 PM
+
+🪔 Lagan Lekhan - 22 November, 8:00 AM
+🌼 Haldi-Mehndi - 29 November, 12:00 PM
+💃 Ladies Sangeet - 29 November, 2:00 PM
+🌸 Chaak - 29 November, 4:00 PM
+💍 Wedding - 30 November, 7:00 PM
 
 With love & blessings,
 Karodiya Family
 
-You are cordially invited!`;
+Chandra Shekhar: 9950601964
+Kapil: 8432562718
+
+You are cordially invited! ❤️`;
 
  window.open("https://wa.me/?text="+encodeURIComponent(msg),"_blank");
 }
